@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0038a8; /* Blue background */
+  }
+  
+  .header-icon {
+    color: white;
+    font-size: 28px; /* Adjust size as needed */
+    cursor: pointer; /* Indicate interactivity */
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .header-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    color: rgba(214, 2, 112, 0.8); /* Change color on hover */
+  }
+  
