@@ -1,0 +1,83 @@
+
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px; /* Adjust padding for spacing */
+    background: #333333;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Align to the top of the page */
+    left: 0;
+    width: 100%; /* Full-width navbar */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  /* Logo Styling */
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    width: 40px; /* Logo size */
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar .logo a { /* Ensure logo links are styled properly */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Consistent color */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: var(--pink); /* Highlight effect */
+  }
+  
+  /* Add spacing for the rest of the page content */
+  body {
+    margin: 0;
+    padding-top: 70px; /* Adjust for the height of the fixed navbar */
+    background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
+    background-size: 300% 300%;
+    animation: gradient-animation 6s infinite;
+  }
+  
+  /* Mobile Navbar Styling */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
