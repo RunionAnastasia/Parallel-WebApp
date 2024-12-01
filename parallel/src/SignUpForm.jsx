@@ -121,6 +121,7 @@ import { auth } from "./firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { db } from "./firebase";
 import { doc, setDoc } from "firebase/firestore";
+import Navbar from "./Navbar";
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
@@ -166,6 +167,11 @@ const SignUpForm = () => {
 
   return (
     <div className="signup-container">
+      <Navbar />
+
+
+
+
       <form className="signup-form" onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
 

@@ -284,7 +284,7 @@ import SignUpForm from './SignUpForm';
 import Login from './Login';
 import Header from './Header';
 import ProfileView from './ProfileView';
-import MatchmakingView from './MatchmakingView';
+import MatchmakingView from './MatchMakingView';
 import ChatView from './ChatView';
 import ProfileEditView from './ProfileEditView';
 import MatchesView from './MatchesView';

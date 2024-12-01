@@ -1,3 +1,19 @@
+
+
+
+:root {
+  --pink: #ff69b4;
+  --blue: #4b88ff;
+  --purple: #9b4dff;
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+  --dark-gray: #333333;
+}
+
+
+
+
+
 /* Universal Reset */
 * {
     margin: 0;
@@ -12,7 +28,8 @@
     align-items: center;
     padding: 20px;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270);
+    /* background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); */
+    background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
     color: black; 
     min-height: 100vh;
   }
@@ -149,10 +166,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270);
-    color: black;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
   }
   
   .settings-form {
@@ -162,6 +176,8 @@
     width: 400px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
+  
+  
   
   .section {
     margin-bottom: 20px;
@@ -189,7 +205,8 @@
   }
   
   button.save-button {
-    background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270);
+    /* background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); */
+    background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
     color: black;
     border: none;
     padding: 10px 20px;
@@ -200,7 +217,8 @@
   }
   
   button.save-button:hover {
-    background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8);
+    /* background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); */
+    background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
     transform: scale(1.05);
   }
   

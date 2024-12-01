@@ -1,14 +1,41 @@
-.matches-container {
+
+:root {
+  --pink: #ff69b4;
+  --blue: #4b88ff;
+  --purple: #9b4dff;
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+  --dark-gray: #333333;
+}
+
+
+/* .matches-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270);
+   
+   
     height: 100vh;
     min-height: 100vh;
     width: 60vw;
     color: #ffffff;
+  } */
+
+  .matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); Pink, Purple, Blue */
+    background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
+    height: 100vh;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    width: 100vw;
+    margin: 0 auto;
   }
+  
   
   .matches-container h1 {
     color: #ffffff;
@@ -48,5 +75,22 @@
   .match-card p {
     font-size: 14px;
     color: #420a26;
+  }
+  
+
+
+  .unmatch-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .unmatch-button:hover {
+    background-color: #cc0000;
   }
   

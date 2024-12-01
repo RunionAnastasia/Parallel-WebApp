@@ -1,3 +1,20 @@
+
+
+
+
+:root {
+    --pink: #ff69b4;
+    --blue: #4b88ff;
+    --purple: #9b4dff;
+    --white: #ffffff;
+    --light-gray: #f9f9f9;
+    --dark-gray: #333333;
+  }
+  
+  
+
+
+
 .card {
     position: relative;
     width: 600px;

@@ -1,17 +1,31 @@
 
   
 
+
+:root {
+  --pink: #ff69b4;
+  --blue: #4b88ff;
+  --purple: #9b4dff;
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+  --dark-gray: #333333;
+}
+
+
+
   /* Profile View Container */
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); /* Pink, Purple, Blue */
+  
+  /* background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); Pink, Purple, Blue */
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
   height: 100vh;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
-  width: 60vw;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -27,17 +41,17 @@
 
 /* Profile Photo */
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  border: 2px solid #9b4f96; /* Purple border */
+  /* border: 2px solid #9b4f96; Purple border */
 }
 
 /* Profile Card Header */
 .profile-card h2 {
-  color: #d60270; /* Pink */
+  /* color: #d60270; Pink */
   margin-bottom: 10px;
 }
 
@@ -53,7 +67,8 @@
 .profile-button {
   display: inline-block;
   margin: 10px 5px;
-  background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); /* Blue, Purple, Pink */
+  /* background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); Blue, Purple, Pink */
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
   color: white;
   border: none;
   padding: 10px 20px;
@@ -65,7 +80,8 @@
 }
 
 .profile-button:hover {
-  background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); /* Reverse gradient */
+  /* background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); Reverse gradient */
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
   transform: scale(1.05);
 }
 
@@ -75,7 +91,8 @@
 
 /* Logout Button */
 .profile-logout-button {
-  background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); /* Pink, Purple, Blue */
+  /* background: linear-gradient(135deg, #d60270, #9b4f96, #0038a8); Pink, Purple, Blue */
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
   color: white;
   border: none;
   padding: 10px 20px;
@@ -87,7 +104,8 @@
 }
 
 .profile-logout-button:hover {
-  background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); /* Reverse gradient */
+  /* background: linear-gradient(135deg, #0038a8, #9b4f96, #d60270); Reverse gradient */
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--blue));
   transform: scale(1.05);
 }
 
@@ -114,3 +132,9 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+
+
+
+
+
